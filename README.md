@@ -16,4 +16,4 @@ Outcome:
 This project demonstrates my ability to create interactive and visually appealing web components that provide a seamless user experience. The customized radio buttons and form handling functionalities showcase my skills in front-end development and attention to detail.
 
 The project was developed by Mohamed Sayed Elmahdy and is a testament to my proficiency in modern web development techniques.
-![customize radio input]([images/screenshot.png](https://raw.githubusercontent.com/mohamed-sayed-elmahdy/Customize-Radio-Input/master/customize%20radio%20input.png))
+![customize radio input](https://raw.githubusercontent.com/mohamed-sayed-elmahdy/Customize-Radio-Input/master/customize%20radio%20input.png)
