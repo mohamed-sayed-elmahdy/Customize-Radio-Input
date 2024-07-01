@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Button Group</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="quiz-form">
+      <div>
+        <input type="radio" id="option1" name="question1" value="A" />
+        <label for="option1">Option A</label>
+      </div>
+      <div>
+        <input type="radio" id="option2" name="question1" value="B" />
+        <label for="option2">Option B</label>
+      </div>
+      <div>
+        <input type="radio" id="option3" name="question1" value="C" />
+        <label for="option3">Option C</label>
+      </div>
+
+      <button type="button" onclick="showSelectedValue()">
+        Show Selected Value
+      </button>
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      function showSelectedValue() {
+        const selectedOption = document.querySelector(
+          'input[name="question1"]:checked'
+        );
+        if (selectedOption) {
+          alert(`Selected value: ${selectedOption.value}`);
+        } else {
+          alert("No option selected");
+        }
+      }
+
+      // Optional: Handling form submission to see the submitted data in console
+      document
+        .getElementById("quiz-form")
+        .addEventListener("submit",
+         function (event) {
+          event.preventDefault();
+          const formData = new FormData(this);
+          console.log(
+            `Submitted value for question1: ${formData.get("question1")}`
+          );
+        }
+    );
+    </script>
+  </body>
+</html>
