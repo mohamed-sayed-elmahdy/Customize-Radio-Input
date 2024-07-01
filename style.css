@@ -8,8 +8,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   height: 100vh;
   background: black;
+  color: white;
+}
+h2 {
+    margin-bottom: 0.5rem;
+}
+h5 {
+    font-weight: 200;
+    position: absolute;
+    bottom: 5px;
+    text-transform: capitalize;
 }
 #quiz-form {
   display: flex;

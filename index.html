@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <h2>Customize Radio Inputs Project</h2>
     <form id="quiz-form">
       <div>
         <input type="radio" id="option1" name="question1" value="A" />
@@ -26,7 +27,7 @@
       </button>
       <button type="submit">Submit</button>
     </form>
-
+    <h5>&copy; <span id="year"></span>. All Rights Reserved. Developed by Mohamed Sayed Elmahdy.</h5>
     <script>
       function showSelectedValue() {
         const selectedOption = document.querySelector(
@@ -51,6 +52,7 @@
           );
         }
     );
+    document.getElementById('year').textContent = new Date().getFullYear();
     </script>
   </body>
 </html>
